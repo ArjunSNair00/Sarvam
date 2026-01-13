@@ -1,12 +1,16 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { StyleSheet, Text } from "react-native";
 
 const LoginInput = () => {
-  return (
-    <View>
-      <Text>LoginInput</Text>
-    </View>
-  );
+  return <Text style={styles.text}>LoginInput</Text>;
 };
 
 export default LoginInput;
+
+const styles = StyleSheet.create({
+  text: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});

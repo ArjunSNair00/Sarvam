@@ -1,6 +1,7 @@
 import { useFonts } from "expo-font";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import LoginInput from "../../components/LoginInput";
 
 const Login = () => {
   const [fontsLoaded] = useFonts({
@@ -14,6 +15,7 @@ const Login = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.Welcome}>Welcome</Text>
+      <LoginInput />
     </View>
   );
 };
